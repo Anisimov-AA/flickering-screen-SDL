@@ -1,52 +1,30 @@
-# TV Static Simulator
-
-A TV static effect simulator in C using SDL2 for real-time pixel manipulation and rendering.
+A real-time TV static effect using C and SDL2 for direct pixel manipulation
 
 <div align="center">
   <img src="img/tv.jpg" alt="Flickering Screen" width="600"/>
 </div>
 
-## 📋 Overview
+## Setup
 
-This project recreates the classic "white noise" static effect seen on old analog televisions. The application demonstrates fundamental graphics programming concepts including:
+**Requirements:** C compiler (GCC), SDL2
 
-- Direct pixel manipulation with SDL2 surfaces
-- Real-time random data generation
-
-## 🛠️ Technologies
-
-- C - Core programming language
-- SDL2 - Graphics, window management, and surface manipulation
-- GCC - Compiler
-
-## ⚙️ Installation & Setup
-
-**Prerequisites**  
-First, install the SDL2 development library:  
-
-Ubuntu/Debian:  
-
+1. Install SDL2 (Ubuntu)
 ```bash
-sudo apt update  
-sudo apt install libsdl2-dev  
+sudo apt update && sudo apt install libsdl2-dev
 ```
 
-macOS (using Homebrew):
-  
-```bash
-brew install sdl2
-```
-
-**Compilation**  
-Compile the game using GCC:  
-
+2. compile
 ```bash
 gcc tv.c -o tv -lSDL2
 ```
 
-**Running the Game**  
-Execute the compiled binary:  
-
+3. run
 ```bash
 ./tv
 ```
+
+## Usage
+
+- Launch → window opens with animated static
+- Close window or press ESC to exit
+- Each frame generates new random pixel values (classic TV noise effect)
