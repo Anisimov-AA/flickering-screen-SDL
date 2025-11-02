@@ -8,7 +8,7 @@ A real-time TV static effect using C and SDL2 for direct pixel manipulation
 
 **Requirements:** C compiler (GCC), SDL2
 
-1. Install SDL2 (Ubuntu)
+1. install SDL2 (Ubuntu)
 ```bash
 sudo apt update && sudo apt install libsdl2-dev
 ```
